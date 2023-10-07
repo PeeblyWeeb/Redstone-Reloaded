@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "redstone_reloaded",
+  "version": "${version}",
+  "name": "Redstone Reloaded",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/PeeblyWeeb/Redstone Reloaded"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/redstone_reloaded/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.salamithecat.redstone_reloaded.client.RedstoneReloadedClient"
+    ],
+    "main": [
+      "com.salamithecat.redstone_reloaded.RedstoneReloaded"
+    ]
+  },
+  "mixins": [
+    "redstone_reloaded.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
